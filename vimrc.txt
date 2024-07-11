@@ -1,0 +1,27 @@
+" Turn syntax highlight on.
+syntax on
+
+" Add number to each line on the left-hand side
+set number
+
+" Do not save backup files
+set nobackup
+
+# Whith this the DEL and Backspace key works
+set backspace=indent,eol,start  " more powerful backspacing
+
+
+" PLUGINS ---------------------------------------------------------------- {{{
+
+" NERDTree --> File system on the left-side
+call plug#begin('~/.vim/plugged')
+
+
+  Plug 'dense-analysis/ale'
+
+  Plug 'preservim/nerdtree'
+
+
+call plug#end()
+
+" }}}
